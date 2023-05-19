@@ -1,0 +1,16 @@
+li{
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+li.active {
+    font-weight: bold;
+  }
+  
+  #mygrey {
+    color: #545454;
+  }
