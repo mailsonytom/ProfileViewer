@@ -89,7 +89,6 @@ const Dashboard = () => {
           return item.id === parseInt(id);
         });
         setuserData(filteredData[0]);
-        console.log(filteredData);
       } catch (error) {
         console.error("Error", error);
       }
@@ -149,7 +148,7 @@ const Dashboard = () => {
           </div>
           <div className="col-end-13 col-span-2">
             <Popover content={content} title="" trigger="click">
-              <p id="mygrey">{userData && userData.name}</p>
+              <p id="mygrey" className="cursor-pointer">{userData && userData.name}</p>
             </Popover>
           </div>
         </div>
@@ -203,9 +202,9 @@ const Dashboard = () => {
               width: "0.5px",
             }}
           ></div>
-          <div className="col-span-3">
+          <div className="col-span-7">
             <p className="text-left text-gray-400 ml-1">Address:</p>
-            <div className="grid grid-cols-3">
+            <div className="grid grid-cols-3 mr-52">
               <div className="text-right col-span-1 text-gray-400">
                 <p>Street :</p>
                 <p>Suite :</p>

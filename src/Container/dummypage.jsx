@@ -41,7 +41,6 @@ const Dashboard = () => {
           return item.id === parseInt(id);
         });
         setuserData(filteredData[0]);
-        console.log(filteredData);
       } catch (error) {
         console.error("Error", error);
       }

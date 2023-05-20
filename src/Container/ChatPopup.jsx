@@ -18,7 +18,6 @@ const ChatPopup = (props) => {
   };
 
   const userClicked = (user) => {
-    console.log("User", user);
     setchatBox(true);
     setchattername(user.name, user.profilepicture);
     setchatterprofile(user.profilepicture);

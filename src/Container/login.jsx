@@ -36,9 +36,9 @@ const Login = () => {
     >
       <div className="flex justify-center rounded-3xl">
         <List
-          className="w-4/12 bg-white mt-4 mb-4"
+          className="w-4/12 bg-white mt-4 mb-4  h-96 mt-40 overflow-auto"
           header={
-            <div className="bg-gray text-lg text-gray-600">
+            <div className="bg-gray text-lg text-gray-600 font-bold">
               Select an account
             </div>
           }
@@ -57,7 +57,7 @@ const Login = () => {
                   width="30px"
                   className=" col-span-1 rounded-full"
                 />
-                <span className="text-lg col-span-5 ml-2">{user.name}</span>
+                <span className="text-base col-span-5 ml-2">{user.name}</span>
               </div>
             </List.Item>
           )}
